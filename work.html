@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Michael Bekele, Frontend Developer</title>
+  <meta name="description" content="A showcase of frontend projects including a coffee shop, gym, and SaaS landing page."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="page-work">
+
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <div class="page-transition" id="page-transition"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-dot"></span>
+        <span>Michael Bekele<em>.</em></span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nl">Home</a>
+        <a href="about.html" class="nl">About</a>
+        <a href="work.html" class="nl active">Work</a>
+        <a href="contact.html" class="nl">Contact</a>
+      </nav>
+      <a href="contact.html" class="nav-cta">Hire me →</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="page-eyebrow" data-reveal>Portfolio</p>
+      <h1 class="page-headline" data-reveal>
+        Projects I've<br/>
+        <span class="accent-gold">built from scratch.</span>
+      </h1>
+      <p class="page-sub" data-reveal>
+        Each project below solved a different business problem.
+        I focus on clarity, speed, and visual identity that matches the audience.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECT 1 — CAFÉ STREET -->
+  <section class="project-section" id="cafe">
+    <div class="project-inner project-inner--ltr">
+
+      <div class="project-visual" data-reveal>
+        <div class="project-img-wrap">
+          <img src="thumb_cafe.jpg" alt="Café Street website screenshot" loading="lazy"/>
+          <div class="project-img-overlay">
+            <a href="https://coffee-street12.netlify.app/" target="_blank" rel="noopener" class="project-visit-btn" id="cafe-btn">
+              Open live site ↗
+            </a>
+          </div>
+        </div>
+        <div class="project-number" aria-hidden="true">01</div>
+      </div>
+
+      <div class="project-details" data-reveal>
+        <div class="project-tags">
+          <span>Landing Page</span>
+          <span>Food & Lifestyle</span>
+          <span>Animation-heavy</span>
+        </div>
+        <h2 class="project-title">Café Street</h2>
+        <p class="project-desc">
+          A coffee shop landing page built around a warm, editorial design language. 
+          The brief was simple: make someone feel the smell of fresh coffee through 
+          a screen. The entire aesthetic — the floating beans, the circular hero cup, 
+          the amber palette — was reverse-engineered from that one sentence.
+        </p>
+        <div class="project-features">
+          <h3>What mattered most</h3>
+          <ul>
+            <li>Floating coffee bean parallax on mouse move</li>
+            <li>Product filter tabs with staggered card animations</li>
+            <li>Add-to-cart system with badge bump and toast notifications</li>
+            <li>3D tilt effect on the hero cup image</li>
+            <li>Scroll-triggered reveal animations throughout</li>
+            <li>Live search filtering across the menu</li>
+          </ul>
+        </div>
+        <div class="project-tech">
+          <span>HTML5</span><span>CSS3</span><span>Vanilla JS</span><span>IntersectionObserver</span>
+        </div>
+        <div class="project-links">
+          <a href="https://coffee-street12.netlify.app/" target="_blank" rel="noopener" class="btn btn-gold" id="cafe-live">
+            View live site ↗
+          </a>
+          <a href="https://github.com/mikomekanzi/coffee-street" target="_blank" rel="noopener" class="btn-link" id="cafe-github">
+            GitHub →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="project-divider" aria-hidden="true"></div>
+
+  <!-- PROJECT 2 — FORGE GYM -->
+  <section class="project-section" id="forge">
+    <div class="project-inner project-inner--rtl">
+
+      <div class="project-details" data-reveal>
+        <div class="project-tags">
+          <span>Landing Page</span>
+          <span>Fitness</span>
+          <span>Dark Theme</span>
+        </div>
+        <h2 class="project-title">FORGE Gym</h2>
+        <p class="project-desc">
+          The challenge here was completely opposite to the café site — instead of 
+          warmth, the brief was power, discipline, and edge. The dark cinematic 
+          aesthetic with electric green accents was designed to feel like walking 
+          into a serious gym at 5AM, not a lifestyle brand.
+        </p>
+        <div class="project-features">
+          <h3>Focus areas</h3>
+          <ul>
+            <li>High-contrast hierarchy designed for quick scanning</li>
+            <li>Loader with animated progress bar counting to 100%</li>
+            <li>Hero parallax scroll on background image</li>
+            <li>Fully working BMI calculator with animated SVG gauge needle</li>
+            <li>Pricing toggle with smooth number counter animation</li>
+            <li>Auto-rotating testimonials carousel (5-second interval)</li>
+            <li>Sticky CTA bar appearing after 3 seconds</li>
+          </ul>
+        </div>
+        <div class="project-tech">
+          <span>HTML5</span><span>CSS3</span><span>Vanilla JS</span><span>SVG Animation</span>
+        </div>
+        <div class="project-links">
+          <a href="https://forge-gym12.netlify.app/" target="_blank" rel="noopener" class="btn btn-gold" id="gym-live">
+            View live site ↗
+          </a>
+          <a href="https://github.com/mikomekanzi/Forge-gym" target="_blank" rel="noopener" class="btn-link" id="gym-github">
+            GitHub →
+          </a>
+        </div>
+      </div>
+
+      <div class="project-visual" data-reveal>
+        <div class="project-img-wrap">
+          <img src="thumb_gym.jpg" alt="FORGE gym website screenshot" loading="lazy"/>
+          <div class="project-img-overlay">
+            <a href="https://forge-gym12.netlify.app/" target="_blank" rel="noopener" class="project-visit-btn" id="gym-btn">
+              Open live site ↗
+            </a>
+          </div>
+        </div>
+        <div class="project-number" aria-hidden="true">02</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="project-divider" aria-hidden="true"></div>
+
+  <!-- PROJECT 3 — NEXUS SAAS -->
+  <section class="project-section" id="nexus">
+    <div class="project-inner project-inner--ltr">
+
+      <div class="project-visual" data-reveal>
+        <div class="project-img-wrap">
+          <img src="thumb_saas.jpg" alt="Nexus SaaS website screenshot" loading="lazy"/>
+          <div class="project-img-overlay">
+            <a href="https://nexus-pro1.netlify.app/" target="_blank" rel="noopener" class="project-visit-btn" id="saas-btn">
+              Open live site ↗
+            </a>
+          </div>
+        </div>
+        <div class="project-number" aria-hidden="true">03</div>
+      </div>
+
+      <div class="project-details" data-reveal>
+        <div class="project-tags">
+          <span>Landing Page</span>
+          <span>SaaS / Tech</span>
+          <span>Light Mode</span>
+        </div>
+        <h2 class="project-title">Nexus SaaS</h2>
+        <p class="project-desc">
+          The most technically complex of the three. SaaS clients are skeptical by 
+          nature — they've seen too many generic landing pages. This site needed to 
+          feel credible, precise, and modern. The dashboard mockup is entirely 
+          hand-built in HTML and CSS, not a screenshot.
+        </p>
+        <div class="project-features">
+          <h3>Implementation highlights</h3>
+          <ul>
+            <li>CSS grid background in the hero section</li>
+            <li>Browser chrome mockup with floating notification cards</li>
+            <li>Infinite logo marquee strip</li>
+            <li>Feature cards with live mini UI (task list + animated bar chart)</li>
+            <li>Billing toggle with animated price counter</li>
+            <li>FAQ accordion (exclusive open, smooth max-height)</li>
+            <li>Scroll-triggered counter animation on hero stats</li>
+          </ul>
+        </div>
+        <div class="project-tech">
+          <span>HTML5</span><span>CSS3</span><span>Vanilla JS</span><span>CSS Grid</span>
+        </div>
+        <div class="project-links">
+          <a href="https://nexus-pro1.netlify.app/" target="_blank" rel="noopener" class="btn btn-gold" id="saas-live">
+            View live site ↗
+          </a>
+          <a href="https://github.com/mikomekanzi/Nexus" target="_blank" rel="noopener" class="btn-link" id="saas-github">
+            GitHub →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK PAGE CTA -->
+  <section class="work-cta" data-reveal>
+    <div class="work-cta-inner">
+      <h2>Want something like this<br/>built for you?</h2>
+      <a href="contact.html" class="btn btn-gold" id="work-contact-btn">Let's talk →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="nav-brand footer-brand">
+        <span class="brand-dot"></span>
+        <span>Bekel<em>.</em></span>
+      </a>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Bekel. Built by hand.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

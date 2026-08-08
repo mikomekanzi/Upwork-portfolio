@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Michael Bekele, Frontend Developer</title>
+  <meta name="description" content="Frontend developer building conversion-focused websites with bold design and clean performance."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="page-home">
+
+  <!-- CURSOR -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- PAGE TRANSITION -->
+  <div class="page-transition" id="page-transition"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" id="nav-brand">
+        <span class="brand-dot"></span>
+        <span>Michael Bekele<em>.</em></span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nl active">Home</a>
+        <a href="about.html" class="nl">About</a>
+        <a href="work.html" class="nl">Work</a>
+        <a href="contact.html" class="nl">Contact</a>
+      </nav>
+      <a href="contact.html" class="nav-cta" id="nav-cta">Hire me →</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-home">
+    <div class="hero-bg-img">
+      <img src="portfolio_hero_bg_1786190044592.jpg" alt="" aria-hidden="true"/>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-home-inner">
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <div class="hero-tag" data-reveal>
+            <span class="status-dot"></span> Available for freelance work
+          </div>
+
+          <h1 class="hero-home-headline" data-reveal>
+            <span class="hl-thin">Websites with</span><br/>
+            <span class="hl-bold">personality, speed,</span><br/>
+            <span class="hl-accent">and clear goals.</span>
+          </h1>
+
+          <p class="hero-home-sub" data-reveal>
+            I'm Bekel, a frontend developer focused on marketing sites that feel distinct,
+            load fast, and help real businesses earn trust quickly.
+          </p>
+
+          <div class="hero-home-cta" data-reveal>
+            <a href="work.html" class="btn btn-gold" id="view-work-btn">View my work</a>
+            <a href="about.html" class="btn-link" id="about-link">About me →</a>
+          </div>
+        </div>
+
+        <aside class="portrait-card" data-reveal>
+          <div class="portrait-frame">
+            <img src="My image.jpg" alt="Portrait of Bekel" loading="lazy"/>
+          </div>
+          <div class="portrait-meta">
+            <p class="portrait-name">Michael Bekele</p>
+            <p class="portrait-role">Frontend Developer</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span class="scroll-line-v"></span>
+        <span>scroll</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK (teaser on home) -->
+  <section class="home-work">
+    <div class="hw-header" data-reveal>
+      <span class="section-label">Selected Work</span>
+      <h2 class="hw-title">Selected builds with different goals.</h2>
+      <a href="work.html" class="btn-link hw-all">See all work →</a>
+    </div>
+
+    <div class="hw-grid">
+      <!-- Cafe -->
+      <article class="hw-card" data-reveal onclick="navigate('work.html')">
+        <div class="hw-img-wrap">
+          <img src="thumb_cafe.jpg" alt="Café Street website" loading="lazy"/>
+          <div class="hw-overlay">
+            <a href="https://coffee-street12.netlify.app/" target="_blank" rel="noopener" class="hw-visit" id="cafe-live" onclick="event.stopPropagation()">Visit live site ↗</a>
+          </div>
+        </div>
+        <div class="hw-meta">
+          <div class="hw-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <h3>Café Street</h3>
+          <p>A tactile coffee brand page built to feel warm and crafted, with focused interactions and strong product storytelling.</p>
+          <a href="work.html#cafe" class="hw-more">Case study →</a>
+        </div>
+      </article>
+
+      <!-- Gym -->
+      <article class="hw-card hw-card--offset" data-reveal onclick="navigate('work.html')">
+        <div class="hw-img-wrap">
+          <img src="thumb_gym.jpg" alt="FORGE gym website" loading="lazy"/>
+          <div class="hw-overlay">
+            <a href="https://forge-gym12.netlify.app/" target="_blank" rel="noopener" class="hw-visit" id="gym-live" onclick="event.stopPropagation()">Visit live site ↗</a>
+          </div>
+        </div>
+        <div class="hw-meta">
+          <div class="hw-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <h3>FORGE Gym</h3>
+          <p>A high-energy gym landing page centered on urgency, authority, and conversion-focused structure.</p>
+          <a href="work.html#forge" class="hw-more">Case study →</a>
+        </div>
+      </article>
+
+      <!-- SaaS -->
+      <article class="hw-card" data-reveal onclick="navigate('work.html')">
+        <div class="hw-img-wrap">
+          <img src="thumb_saas.jpg" alt="Nexus SaaS website" loading="lazy"/>
+          <div class="hw-overlay">
+            <a href="https://nexus-pro1.netlify.app/" target="_blank" rel="noopener" class="hw-visit" id="saas-live" onclick="event.stopPropagation()">Visit live site ↗</a>
+          </div>
+        </div>
+        <div class="hw-meta">
+          <div class="hw-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <h3>Nexus SaaS</h3>
+          <p>A SaaS landing page that balances credibility and motion, with clear hierarchy for skeptical buyers.</p>
+          <a href="work.html#nexus" class="hw-more">Case study →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SERVICES STRIP -->
+  <section class="services-strip" data-reveal>
+    <div class="services-inner">
+      <p class="services-label">What I do</p>
+      <div class="services-list">
+        <div class="service-item">
+          <span class="si-num">01</span>
+          <div>
+            <h3>Landing Pages</h3>
+            <p>Fast, conversion-focused pages that represent your brand at its best.</p>
+          </div>
+        </div>
+        <div class="service-divider"></div>
+        <div class="service-item">
+          <span class="si-num">02</span>
+          <div>
+            <h3>Web Design → Code</h3>
+            <p>Bring your Figma, sketch, or rough idea — I turn it into a real, working site.</p>
+          </div>
+        </div>
+        <div class="service-divider"></div>
+        <div class="service-item">
+          <span class="si-num">03</span>
+          <div>
+            <h3>Interactive Experiences</h3>
+            <p>Animations, calculators, filters, toggles — the functionality that makes a site feel alive.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME CTA -->
+  <section class="home-cta" data-reveal>
+    <div class="home-cta-inner">
+      <p class="hcta-label">Let's work together</p>
+      <h2 class="hcta-title">Have a project in mind?</h2>
+      <p class="hcta-sub">I keep my project load intentionally small so each launch gets full attention. If you need a site that feels like you, let's talk.</p>
+      <a href="contact.html" class="btn btn-gold" id="home-contact-btn">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="nav-brand footer-brand">
+        <span class="brand-dot"></span>
+        <span>Bekel<em>.</em></span>
+      </a>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Bekel. Built by hand.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

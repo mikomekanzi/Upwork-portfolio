@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Michael Bekele, Frontend Developer</title>
+  <meta name="description" content="Learn about my background, skills, and how I approach building websites."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="page-about">
+
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <div class="page-transition" id="page-transition"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-dot"></span>
+        <span>Michael Bekele<em>.</em></span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nl">Home</a>
+        <a href="about.html" class="nl active">About</a>
+        <a href="work.html" class="nl">Work</a>
+        <a href="contact.html" class="nl">Contact</a>
+      </nav>
+      <a href="contact.html" class="nav-cta">Hire me →</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ABOUT HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="page-eyebrow" data-reveal>About me</p>
+      <h1 class="page-headline" data-reveal>
+        I write code.<br/>
+        <span class="accent-gold">I think in design.</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- ABOUT MAIN -->
+  <section class="about-main">
+    <div class="about-main-inner">
+
+      <!-- Photo + quick facts -->
+      <div class="about-photo-col" data-reveal>
+        <figure class="about-photo-card" id="photo-placeholder">
+          <img src="My image.jpg" alt="Portrait of Bekel" class="about-photo" loading="lazy"/>
+        </figure>
+
+        <div class="quick-facts">
+          <div class="qf-item">
+            <span class="qf-label">Based in</span>
+            <span class="qf-val">Addis Ababa, Ethiopia</span>
+          </div>
+          <div class="qf-item">
+            <span class="qf-label">Available</span>
+            <span class="qf-val available">Yes — taking clients</span>
+          </div>
+          <div class="qf-item">
+            <span class="qf-label">Experience</span>
+            <span class="qf-val">Frontend Development</span>
+          </div>
+          <div class="qf-item">
+            <span class="qf-label">Response time</span>
+            <span class="qf-val">Within 24h</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div class="about-bio-col" data-reveal>
+        <h2 class="about-bio-title">
+          Hi, I'm <span class="accent-gold">Michael,</span><br/>
+          a frontend developer who cares about the details.
+        </h2>
+
+        <div class="about-bio-text">
+          <p>
+            I got into web development because I wanted to recreate the websites I loved, and make them even better. 
+            I started with basic HTML and CSS websites and once I got good at them, I moved to learning JavaScript and gave my websites life.
+          </p>
+          <p>
+            I specalize in bulding landing pages and marketing websites that are fast and efficient.
+            I also can go into your code and fix anything you don't like, or add new features to your existing website.
+          </p>
+          <p>
+            I care less about trends and more about outcomes. Stronger first impressions,
+            better readability, and a flow that makes people take action.
+          </p>
+        </div>
+
+        <a href="work.html" class="btn btn-gold" id="about-view-work">See what I've built →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section">
+    <div class="skills-inner">
+      <h2 class="skills-title" data-reveal>Tools & skills</h2>
+      <div class="skills-grid" data-reveal>
+        <div class="skill-group">
+          <p class="skill-group-label">Languages</p>
+          <div class="skill-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">Styling</p>
+          <div class="skill-tags">
+            <span>Vanilla CSS</span><span>Animations</span><span>Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">JavaScript</p>
+          <div class="skill-tags">
+            <span>DOM Manipulation</span><span>IntersectionObserver</span><span>Fetch API</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">Workflow</p>
+          <div class="skill-tags">
+            <span>Git & GitHub</span><span>Netlify</span><span>Figma</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">Currently learning</p>
+          <div class="skill-tags">
+            <span>React</span><span>Next.js</span><span>TypeScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="approach-section" data-reveal>
+    <div class="approach-inner">
+      <h2 class="approach-title">How I work</h2>
+      <div class="approach-steps">
+        <div class="ap-step">
+          <span class="ap-num">01</span>
+          <h3>Listen first</h3>
+          <p>I want to understand your business, your customers, and what success looks like for this project before writing a single line of code.</p>
+        </div>
+        <div class="ap-step">
+          <span class="ap-num">02</span>
+          <h3>Design with purpose</h3>
+          <p>Every layout decision, color choice, and animation has a reason. I don't add things because they look cool — I add them because they serve the user.</p>
+        </div>
+        <div class="ap-step">
+          <span class="ap-num">03</span>
+          <h3>Build it clean</h3>
+          <p>Hand-coded, commented, and easy to maintain. You'll be able to update text yourself without breaking anything.</p>
+        </div>
+        <div class="ap-step">
+          <span class="ap-num">04</span>
+          <h3>Deliver and support</h3>
+          <p>I don't disappear after launch. If something needs tweaking in the first month, I'm there.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="nav-brand footer-brand">
+        <span class="brand-dot"></span>
+        <span>Bekel<em>.</em></span>
+      </a>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Bekel. Built by hand.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
